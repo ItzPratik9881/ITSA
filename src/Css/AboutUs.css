@@ -1,0 +1,107 @@
+.about-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #7b2ff7; /* main purple */
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Card container */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.about-card {
+  flex: 1 1 280px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.about-card .icon {
+  font-size: 40px;
+  color: #7b2ff7;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.about-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Text */
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Dark Mode - About Section */
+.dark-mode .about-section {
+  background: #1e153d; /* dark purple background */
+  color: #d1c9ff;
+}
+
+.dark-mode .about-section h2 {
+  color: #b39cff; /* lighter purple */
+}
+
+.dark-mode .about-section p {
+  color: #b0a8d4;
+}
+
+.dark-mode .about-card {
+  background: #2c244d; /* dark card bg */
+  box-shadow: 0 8px 20px rgba(50, 40, 90, 0.6);
+  color: #d1c9ff;
+}
+
+.dark-mode .about-card:hover {
+  box-shadow: 0 12px 25px rgba(115, 95, 255, 0.6);
+  transform: translateY(-6px);
+}
+
+.dark-mode .about-card .icon {
+  color: #b39cff;
+}
+
+.dark-mode .about-card h3 {
+  color: #cbbfff;
+}
+
+.dark-mode .about-card p {
+  color: #b0a8d4;
+}

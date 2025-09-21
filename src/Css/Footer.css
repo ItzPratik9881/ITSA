@@ -1,0 +1,248 @@
+.footer {
+  background: #d1b3ff; /* light purple */
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ==== LOGO SECTION ==== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  margin-left: -30px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo-subtext {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+
+/* ==== ABOUT ==== */
+.footer-about {
+  max-width: 300px;
+}
+
+.footer-desc {
+  margin: 15px 0;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+}
+
+/* ==== SOCIAL ICONS ==== */
+.footer-socials {
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #4b0082; /* deep purple hover */
+}
+
+/* ==== LINKS ==== */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color:  #6a11cb;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #f3f3f3;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #4b0082;
+}
+
+/* ==== CONTACT ==== */
+.footer-contact p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #f3f3f3;
+}
+
+/* ==== BOTTOM COPYRIGHT ==== */
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #f9f9f9;
+}
+
+.dark-mode .footer {
+  background: linear-gradient(135deg, #2d1e72, #1b1037, #0a0a14); /* dark purple gradient */
+  color: #e5dbff;
+  padding: 50px 20px 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 15px #6a11cb88; /* subtle purple glow */
+}
+
+.dark-mode .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* ==== LOGO SECTION ==== */
+.dark-mode .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  margin-left: -30px;
+}
+
+.dark-mode .logo-img {
+  filter: brightness(1.2) contrast(1.2); /* brighten logo in dark mode */
+}
+
+.dark-mode .logo-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffea00; /* gold highlight */
+  text-shadow: 0 0 6px #ffea00cc;
+}
+
+.dark-mode .logo-subtext {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #dcd6ffcc; /* lighter purple */
+}
+
+/* ==== ABOUT ==== */
+.dark-mode .footer-about {
+  max-width: 300px;
+}
+
+.dark-mode .footer-desc {
+  margin: 15px 0;
+  font-size: 0.85rem;
+  color: #ccc9ffcc;
+}
+
+/* ==== SOCIAL ICONS ==== */
+.dark-mode .footer-socials {
+  margin-top: 15px;
+}
+
+.dark-mode .footer-socials a {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  color: #ffea00cc;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  filter: drop-shadow(0 0 4px #ffea00bb);
+}
+
+.dark-mode .footer-socials a:hover {
+  color: #fff25c;
+  filter: drop-shadow(0 0 8px #fff25cdd);
+}
+
+/* ==== LINKS ==== */
+.dark-mode .footer-links h4,
+.dark-mode .footer-contact h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffea00; /* gold highlight */
+  text-shadow: 0 0 5px #ffea00cc;
+}
+
+.dark-mode .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dark-mode .footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.dark-mode .footer-links ul li a {
+  color: #ddd6ffcc;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .footer-links ul li a:hover {
+  color: #fff25c;
+  text-shadow: 0 0 5px #fff25ccc;
+}
+
+/* ==== CONTACT ==== */
+.dark-mode .footer-contact p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #dcd6ffcc;
+}
+
+/* ==== BOTTOM COPYRIGHT ==== */
+.dark-mode .footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 234, 0, 0.4);
+  text-align: center;
+  padding-top: 15px;
+}
+
+.dark-mode .footer-bottom p {
+  font-size: 0.85rem;
+  color: #ffea00cc;
+  text-shadow: 0 0 5px #ffea00bb;
+}

@@ -1,0 +1,183 @@
+.events-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.events-section h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #6a11cb;
+}
+
+.event-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.event-tabs button {
+  flex: 1;
+  max-width: 350px;
+  padding: 12px 20px;
+  border: 2px solid #6a11cb;
+  color: #6a11cb;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.event-tabs button:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.event-tabs button:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.event-tabs button.active {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+}
+
+/* Cards */
+.event-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.event-card {
+  width: 300px;
+  background: #f9f6ff;
+  color: #6a11cb;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-placeholder {
+  height: 100px;
+  background: #eaeaea;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.primary-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.primary-btn:hover {
+  opacity: 0.85;
+}
+
+/* Dark Mode - Events Section */
+/* Dark Mode - Events Section aligned with footer/contact colors */
+.dark-mode .events-section {
+  background-color: #1e153d; /* deep dark purple */
+  color: #f3f3f3; /* near-white text */
+}
+
+.dark-mode .events-section h2 {
+  color: #6a11cb; /* footer heading purple */
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Event Tabs */
+.dark-mode .event-tabs button {
+  border: 2px solid #d1b3ff; /* light purple border */
+  color: #d1b3ff;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .event-tabs button:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.dark-mode .event-tabs button:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.dark-mode .event-tabs button.active {
+  background: linear-gradient(90deg, #6a11cb, #4b0082); /* footer gradient purple */
+  color: #fff;
+  border: none;
+}
+
+/* Event Cards */
+.dark-mode .event-card {
+  background: #2c244d; /* dark purple card bg */
+  color: #f3f3f3;
+  box-shadow: 0px 4px 12px rgba(75, 0, 130, 0.7); /* purple shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+.dark-mode .event-card:hover {
+  box-shadow: 0px 8px 25px rgba(75, 0, 130, 0.9);
+  transform: translateY(-5px);
+}
+
+.dark-mode .event-placeholder {
+  background: #4b0082; /* deep purple */
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.dark-mode .event-card h3 {
+  color: #d1b3ff; /* light purple */
+}
+
+.dark-mode .event-card p {
+  color: #b0a8d4; /* muted purple-ish */
+}
+
+/* Buttons */
+.dark-mode .primary-btn {
+  background: linear-gradient(90deg, #6a11cb, #4b0082); /* footer purple gradient */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.dark-mode .primary-btn:hover {
+  opacity: 0.85;
+}
+

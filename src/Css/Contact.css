@@ -1,0 +1,213 @@
+.contact-section {
+  text-align: center;
+  padding: 70px 20px;
+  background: #fff;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4b0082;
+  font-weight: 800;
+}
+
+.contact-section .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  background: #f9f7ff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(75,0,130,0.2);
+}
+
+.contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #4b0082;
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #333;
+}
+
+.contact-card a {
+  color: #4b0082;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.follow-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  font-size: 1.4rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f0e6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b0082;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  background: #4b0082;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Dark Mode - Contact Section */
+/* Dark Mode - Contact Section matching footer color grading */
+.dark-mode .contact-section {
+  background: #1e153d; /* deep dark purple */
+  color: #f3f3f3; /* near white */
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.dark-mode .contact-section h2 {
+  color: #6a11cb; /* same purple as footer headers */
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.dark-mode .contact-section .subtitle {
+  color: #d1b3ff; /* lighter purple from footer background */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.dark-mode .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.dark-mode .contact-card {
+  background: #2c244d; /* dark purple similar to footer social icons background */
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.7); /* purple shadow */
+  color: #f3f3f3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.dark-mode .contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(75, 0, 130, 0.6); /* deep purple hover shadow */
+  background: #4b0082; /* deep purple hover background */
+}
+
+.dark-mode .contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #d1b3ff; /* light purple */
+}
+
+.dark-mode .contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #fff; /* bright white */
+}
+
+.dark-mode .contact-card a {
+  color: #d1b3ff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .contact-card a:hover {
+  color: #4b0082;
+  text-decoration: underline;
+}
+
+.dark-mode .contact-card p {
+  font-size: 0.9rem;
+  color: #e6d9ff; /* light purple-ish text */
+}
+
+.dark-mode .follow-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f3f3f3;
+}
+
+.dark-mode .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dark-mode .social-links a {
+  font-size: 1.4rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #d1b3ff; /* light purple */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b0082; /* deep purple */
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .social-links a:hover {
+  background: #4b0082; /* deep purple */
+  color: #fff;
+  transform: scale(1.1);
+}
