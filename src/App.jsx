@@ -39,13 +39,14 @@ export default function App() {
 
       {/* Navbar */}
       <header className="navbar">
-        <div className="logo">
+
+        <a href="#home" className="logo">
           <img src={logo} alt="ITSA Logo" className="logo-img" />
           <div className="logo-texts">
-            <span className="logo-title">ITSA</span>
+            <span className="logo-title" href="#home">ITSA</span>
             <span className="logo-subtext">IT students association</span>
           </div>
-        </div>
+        </a>
 
         <nav className="nav-links">
           <a href="#home">Home</a>

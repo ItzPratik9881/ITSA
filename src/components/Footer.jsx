@@ -34,8 +34,7 @@ const Footer = () => {
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaTwitter /></a>
             <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaGithub /></a>
+            <a href="https://www.linkedin.com/company/it-students-association-itsa-vit-pune/"><FaLinkedinIn /></a>
           </div>
         </div>
 
@@ -43,9 +42,9 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
             <li><a href="#">Membership</a></li>
           </ul>
         </div>
@@ -56,7 +55,7 @@ const Footer = () => {
           <ul>
             <li><a href="#">Learning Resources</a></li>
             <li><a href="#">Announcements</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
         </div>
@@ -64,9 +63,9 @@ const Footer = () => {
         {/* ==== CONTACT INFO ==== */}
         <div className="footer-contact">
           <h4>Contact Info</h4>
-          <p>📧 info@itsa.edu</p>
+          <p>📧 itsaclub@vit.edu</p>
           <p>📞 +1 (555) 123-4567</p>
-          <p>📍 Tech Building, Room 201</p>
+          <p>📍 Tech Building</p>
         </div>
       </div>
 
