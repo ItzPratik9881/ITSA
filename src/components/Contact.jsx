@@ -16,7 +16,7 @@ const ContactSection = () => {
         <div className="contact-card">
           <FaEnvelope className="icon" />
           <h3>Email</h3>
-          <a href="mailto:itsa@vitedu">itsa@vitedu</a>
+          <a href="mailto:itsaclub@vit.edu">itsaclub@vit.edu</a>
           <p>Send us your questions anytime</p>
         </div>
 
@@ -30,7 +30,7 @@ const ContactSection = () => {
         <div className="contact-card">
           <FaMapMarkerAlt className="icon" />
           <h3>Location</h3>
-          <a href="#">VIT BIBWEWADI, PUNE</a>
+          <a href="https://maps.app.goo.gl/SXAKzAJxnewBg6f66">VIT BIBWEWADI, PUNE</a>
           <p>College Campus</p>
         </div>
 
@@ -44,7 +44,7 @@ const ContactSection = () => {
 
       <h3 className="follow-title">Follow Us</h3>
       <div className="social-links">
-        <a href="#"><FaInstagram /></a>
+        <a href="https://www.instagram.com/vit_itsa/"><FaInstagram /></a>
         <a href="#"><FaTwitter /></a>
         <a href="#"><FaFacebook /></a>
         <a href="#"><FaLinkedin /></a>
