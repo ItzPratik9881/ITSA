@@ -327,9 +327,11 @@ body, .app {
 
 @media (max-width: 768px) {
   .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;   /* align items in a row */
     gap: 30px;
+    flex-wrap: wrap;       /* allow wrap on smaller screens */
+    justify-content: center;
   }
 }
 
@@ -337,9 +339,14 @@ body, .app {
   .lottie-background {
     height: 100vh;
   }
+  
   .features {
-    grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;   /* allows wrapping on smaller screens */
+  gap: 20px;         /* spacing between cards */
+  justify-content: center;
   }
+
   .card {
     padding: 15px;
   }
