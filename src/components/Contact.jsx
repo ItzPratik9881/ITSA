@@ -47,8 +47,8 @@ const ContactSection = () => {
         <a href="https://www.instagram.com/vit_itsa/"><FaInstagram /></a>
         <a href="#"><FaTwitter /></a>
         <a href="#"><FaFacebook /></a>
-        <a href="#"><FaLinkedin /></a>
-        <a href="#"><FaGithub /></a>
+        <a href="https://www.linkedin.com/company/it-students-association-itsa-vit-pune/"><FaLinkedin /></a>
+       {/*<a href="#"><FaGithub /></a> */}
       </div>
     </section>
   );

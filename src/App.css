@@ -10,17 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --navbar-height: 75px; /* 🔥 use variable for consistent spacing */
-}
 
 body, .app {
-body, .app {
-  width: 100%;
-  height: 100%;   /* exact full screen */
-  margin: 0;
-  padding: 0;
-  background: #6b11cb; /* solid background */
+  min-height: 100vh;
+  background:  #6b11cb93; /* darker base background to contrast particles */
   color: #fff;
   position: relative;
   overflow-x: hidden;
@@ -35,9 +28,9 @@ body, .app {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Push it behind everything else */
+  z-index: 0;
   overflow: hidden;
-  pointer-events: none; /* Don't block clicks */
+  pointer-events: none;
 }
 
 .lottie-background canvas,
@@ -47,7 +40,7 @@ body, .app {
   object-fit: cover;
 }
 
-/* All children except lottie-background and navbar get z-index 1 */
+/* Children except background/navbar */
 .app > *:not(.lottie-background):not(.navbar) {
   position: relative;
   z-index: 1;
@@ -128,8 +121,6 @@ body, .app {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .nav-links a:hover {
@@ -148,13 +139,13 @@ body, .app {
   margin-left: 15px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   padding: calc(var(--navbar-height) + 60px) 20px 80px; /* auto offset for navbar */
   text-align: center;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto; /* center horizontally */
+  margin-left: 270px; /* desktop offset */
   background: transparent;
   position: relative;
   z-index: 10;
@@ -169,7 +160,7 @@ body, .app {
 }
 
 .hero h1:hover {
-  animation: glowText 1.0s infinite alternate;
+  animation: glowText 1s infinite alternate;
 }
 
 .cta-buttons {
@@ -182,16 +173,19 @@ body, .app {
   z-index: 10;
 }
 
-.join-btn {
+.join-btn, .learn-btn {
   padding: 12px 24px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.join-btn {
   background: white;
   color: #6a11cb;
   border: 1px solid white;
-  transition: all 0.3s ease;
 }
 
 .join-btn:hover {
@@ -201,15 +195,9 @@ body, .app {
 }
 
 .learn-btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: 1px solid white;
-  transition: all 0.3s ease;
 }
 
 .learn-btn:hover {
@@ -218,7 +206,7 @@ body, .app {
   transform: scale(1.05);
 }
 
-/* Features Section */
+/* Features */
 .features {
   display: flex;
   justify-content: center;
@@ -227,12 +215,12 @@ body, .app {
   gap: 50px;
   padding: 20px 20px 60px;
   max-width: 1100px;
-  margin: 0 auto; /* 🔥 always centered */
+  margin: 0 auto;
+  margin-left: 220px; /* desktop offset */
   position: relative;
   z-index: 10;
 }
 
-/* Card with Live Border */
 .card {
   position: relative;
   z-index: 1;
@@ -255,7 +243,6 @@ body, .app {
   text-align: center;
 }
 
-/* Inner glassmorphic layer */
 .card::before {
   content: "";
   position: absolute;
@@ -270,7 +257,6 @@ body, .app {
   z-index: -1;
 }
 
-/* Card content */
 .card .icon {
   font-size: 30px;
   margin-bottom: 15px;
@@ -291,6 +277,7 @@ body, .app {
 }
 
 /*-----------------------------Dark Mode-----------------------------------*/
+/*-----------------------------Dark Mode (Enhanced Shiny Colors)-----------------------------------*/
 
 .dark-mode body,
 .dark-mode .app {
@@ -369,10 +356,11 @@ body, .app {
 .dark-mode .card {
   background: linear-gradient(
     135deg,
-    #ffea00,
+    #ffea00     /* vibrant purple */
     #6a11cb,
-    #5033c7,
-    #ffea00
+    #5033c7,   /* electric violet */
+    #ffea00   /* gold */
+    
   );
   background-size: 300% 300%;
   animation: borderFlow 4s ease infinite;
@@ -428,29 +416,38 @@ body, .app {
   100% { background-position: 0% 50%; }
 }
 
+
+
+/* Animations */
+@keyframes borderFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 @keyframes glowText {
   0% {
-    text-shadow:
-      0 0 1px rgba(255, 223, 108, 0.3),
-      0 0 3px rgba(255, 223, 108, 0.35),
-      0 0 3px rgba(255, 223, 108, 0.4);
+    text-shadow: 0 0 1px rgba(255, 223, 108, 0.3),
+                 0 0 3px rgba(255, 223, 108, 0.35);
   }
   100% {
-    text-shadow:
-      0 0 3px rgba(255, 223, 108, 0.5),
-      0 0 6px rgba(255, 223, 108, 0.5),
-      0 0 9px rgba(255, 223, 108, 0.5);
+    text-shadow: 0 0 3px rgba(255, 223, 108, 0.5),
+                 0 0 9px rgba(255, 223, 108, 0.5);
   }
 }
 
-/* Responsive */
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Large tablet */
 @media (max-width: 1100px) {
   .features {
+    margin-left: 0;
     padding: 40px 20px;
     justify-content: center;
   }
 }
 
+/* Medium tablet */
 @media (max-width: 992px) {
   .navbar {
     flex-wrap: wrap;
@@ -459,14 +456,12 @@ body, .app {
     gap: 15px;
     justify-content: center;
   }
-
   .nav-links {
     flex-wrap: wrap;
     gap: 15px;
     margin-left: 0;
     justify-content: center;
   }
-
   .hero {
     padding: calc(var(--navbar-height) + 40px) 20px 60px; /* 🔥 adjusts dynamically */
     text-align: center;
@@ -475,25 +470,35 @@ body, .app {
   .hero h1 {
     font-size: clamp(18px, 6vw, 36px);
   }
-}
 
-/* Tablet breakpoint: 2-column layout */
-@media (max-width: 768px) {
   .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-}
-
-/* Mobile: 1-column */
-@media (max-width: 576px) {
-  .features {
-    grid-template-columns: 1fr;
+    flex-direction: column; /* stack cards vertically */
+    max-width: 100%;
+    margin-left: 0;
+    padding: 20px;
   }
 
+  /* Cards take full width on smaller screens */
   .card {
-    padding: 15px;
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 100%;
+    min-width: auto;
+    padding: 12px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
   }
 }
 
