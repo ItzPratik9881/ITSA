@@ -366,3 +366,143 @@ body, .app {
     font-size: 14px;
   }
 }
+
+/* ===========================
+   🌙 Dark Mode Global Styles
+   =========================== */
+.dark-mode {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Body */
+.dark-mode body,
+.dark-mode .app {
+  background: radial-gradient(circle at top left, #0d0b1a, #1a0f2d, #0d0b1a);
+  color: #f3f3f3;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+  background: #420a7e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 15px rgba(106, 17, 203, 0.6);
+  transition: background 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+}
+
+.dark-mode .nav-links a {
+  background: rgba(255, 255, 255, 0.05);
+  color: #d1b3ff;
+  box-shadow: 0 0 8px rgba(160, 68, 255, 0.25);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px 18px;
+  transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .nav-links a:hover {
+  background: linear-gradient(135deg, #420a7e, #9c3dfcbb, #ffdf6c);
+  color: #fff;
+  border-color: #ffdf6c;
+  box-shadow: 0 0 15px #6a11cb, 0 0 25px #ffdf6c;
+  /* No scale effect */
+}
+
+/* Hero Section */
+.dark-mode .hero h1 {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(160, 68, 255, 0.5);
+}
+
+.dark-mode .hero h1:hover {
+  animation: glowTextDark 1.8s infinite alternate;
+}
+
+/* Buttons */
+.dark-mode .join-btn {
+  background: linear-gradient(135deg, #ffdf6c, #ffae00);
+  color: #1a0a4f;
+  border: none;
+  box-shadow: 0 0 15px rgba(255, 223, 108, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-mode .join-btn:hover {
+  box-shadow: 0 0 25px #ffdf6c, 0 0 35px #a044ff;
+}
+
+.dark-mode .learn-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e6d9ff;
+  border: 1px solid #a044ff;
+  box-shadow: 0 0 12px rgba(160, 68, 255, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .learn-btn:hover {
+  background: linear-gradient(135deg, #6a11cb, #a044ff);
+  color: #fff;
+  box-shadow: 0 0 25px #6a11cb, 0 0 35px #ffdf6c;
+}
+
+/* Features Section */
+.dark-mode .features {
+  color: #f3f3f3;
+}
+
+/* 🌙 Cards: Gradient Glow, No Pop-up */
+.dark-mode .card {
+  background: linear-gradient(135deg, #ffdf6c, #420a7e, #9c3dfcbb, #ffdf6c);
+  background-size: 300% 300%;
+  animation: borderFlow 5s linear infinite;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7),
+              0 0 12px rgba(160, 68, 255, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dark-mode .card h3 {
+  color: #ffdf6c;
+  text-shadow: 0 0 6px rgba(255, 223, 108, 0.7);
+}
+
+.dark-mode .card p {
+  color: #cbb3ff;
+}
+
+/* ===========================
+   🌈 Animations
+   =========================== */
+@keyframes cardGlow {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7),
+                0 0 10px rgba(160, 68, 255, 0.25);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(160, 68, 255, 0.5),
+                0 0 40px rgba(255, 223, 108, 0.3);
+  }
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7),
+                0 0 10px rgba(160, 68, 255, 0.25);
+  }
+}
+
+@keyframes glowTextDark {
+  0% {
+    text-shadow:
+      0 0 4px rgba(255, 223, 108, 0.4),
+      0 0 10px rgba(160, 68, 255, 0.4);
+  }
+  100% {
+    text-shadow:
+      0 0 10px rgba(255, 223, 108, 0.9),
+      0 0 20px rgba(160, 68, 255, 0.8);
+  }
+}

@@ -184,7 +184,8 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #f3f3f3;
+  color: #ffea00cc;
+  text-shadow: 0 0 5px #ffea00bb;
 }
 
 .dark-mode .social-links {
@@ -208,6 +209,6 @@
 
 .dark-mode .social-links a:hover {
   background: #4b0082; /* deep purple */
-  color: #fff;
+  color: #ffea00cc;
   transform: scale(1.1);
 }
